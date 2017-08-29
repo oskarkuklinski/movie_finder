@@ -1,0 +1,10 @@
+nav.navbar
+    a(href="/").nav-btn Home
+    a(href="/about").nav-btn About
+    a(href="/search").nav-btn Search
+    if !currentUser
+        a(href="/register").nav-btn Register
+    if currentUser
+        a(href="/logout").nav-login Log out
+    else
+        a(href="/login").nav-login Log in

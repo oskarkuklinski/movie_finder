@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  font-family: 'Archivo', 'sans-serif'; }
+
+/* MENU NAVBAR */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-grow: 5px;
+  background-color: #232930;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px; }
+
+.navbar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: whitesmoke;
+  display: block;
+  text-align: center;
+  width: 100%; }
+
+.navbar a:hover {
+  background-color: #264C47; }
+
+.nav-login {
+  align-self: flex-end; }
+
+.wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.register, .login {
+  margin-top: 5em;
+  width: 40%; }
+
+.form-group {
+  margin-top: 10px; }
+
+.form-group label {
+  float: left;
+  margin-left: 1em;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: #232930; }
+
+.form-group input[type="text"], input[type="password"] {
+  appearance: none;
+  margin-top: 2px;
+  background-color: none;
+  border: 1px solid #232930;
+  line-height: 0;
+  font-size: 18px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  border-radius: 50px;
+  color: #232930;
+  font-weight: 100;
+  position: relative;
+  z-index: 1;
+  text-align: center; }
+
+.form-group input[type="text"]:focus, input[type="password"]:focus {
+  outline: none;
+  background: #264C47;
+  color: whitesmoke;
+  box-shadow: 2px 5px 2px #888888; }
+
+.form-group input::placeholder {
+  color: #232930;
+  opacity: 0.5; }
+
+h1 {
+  color: #0a0a0a; }
+
+/*# sourceMappingURL=styles.css.map */

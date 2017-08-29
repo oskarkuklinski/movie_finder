@@ -1,0 +1,27 @@
+include includes/header.pug
+body
+    include includes/navbar.pug
+    .wrapper
+        form(method="POST" action="/register").register
+            h1 Sign Up
+            .form-group
+                label Name:
+                br
+                input(type="text", placeholder="First and Last name", name="name")
+            .form-group
+                label Email:
+                br
+                input(type="text", placeholder="E-mail address", name="email")
+            .form-group
+                label Favorite movie:
+                br
+                input(type="text", placeholder="Your favorite movie", name="favoriteMovie")
+            .form-group
+                label Password:
+                br
+                input(type="password", name="password")
+            .form-group
+                label Confirm Password:
+                br
+                input(type="password", name="confirmPassword")
+            button(type="submit") Sign up

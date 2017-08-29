@@ -1,0 +1,32 @@
+{
+  "name": "movie_finder",
+  "version": "1.0.0",
+  "description": "An app helping to find a movie with options of adding to favorites or writing a review. Built with node.js, mongoDB and API from themoviedb.org.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oskarkuklinski/movie_finder.git"
+  },
+  "keywords": [
+    "movie",
+    "finder"
+  ],
+  "author": "Oskar Kuklinski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oskarkuklinski/movie_finder/issues"
+  },
+  "homepage": "https://github.com/oskarkuklinski/movie_finder#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.2",
+    "connect-mongo": "^1.3.2",
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "mongoose": "^4.11.9",
+    "pug": "^2.0.0-rc.3"
+  }
+}

@@ -1,0 +1,12 @@
+include includes/header.pug
+body
+    include includes/navbar.pug
+    .wrapper
+        form(method="POST", action="/login").login
+            .form-group
+                label Email
+                input(type="text", placeholder="email address", name="email")
+            .form-group
+                label Password
+                input(type="password", placeholder="password", name="password")
+            button(type="submit") Log in

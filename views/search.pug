@@ -1,0 +1,26 @@
+include includes/header.pug
+script(src="js/movie.js")
+link(rel="stylesheet", href="styles/movies.css")
+body
+    include includes/navbar.pug
+    .wrapper
+        img.logo(src="https://www.themoviedb.org/assets/static_cache/bb45549239e25f1770d5f76727bcd7c0/images/v4/logos/408x161-powered-by-rectangle-blue.png")
+        .overlay
+            img.poster-desc
+            h2.title-desc
+            p.release-date-desc
+            p.desc
+        h1.title MOVIE FINDER 
+            span.moviedb (from themoviedb.org)
+        .search-block
+            input.search(type="text", placeholder="Type any movie title" name="movie")
+            br
+            .search-button(href="movieFinder()") Search
+        h2.no-results
+        .search-result
+            each result in [0, 1, 2, 3]
+                .movie-block(id="movie-block"+result)
+                    h2.title(id="title"+result)
+                    img.poster(id="poster"+result)
+                    p.description(class="description"+result)
+                    p.release-date(id="release-date"+result)
